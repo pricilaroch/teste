@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/formulario/style.css" />
+    <title>Teste 1 - Formulário Simplificado</title>
+  </head>
+  <body>
+    <form action="submit">
+      <h1>Formulário Simplificado</h1>
+      <div>
+        <div class="input-container">
+          <div>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" />
+          </div>
+        </div>
+        <div class="erro" id="erro-nome"></div>
+
+        <div class="input-container">
+          <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" />
+          </div>
+        </div>
+        <div class="erro" id="erro-email"></div>
+
+        <div class="input-container">
+          <div>
+            <label for="idade">Idade: </label>
+            <input type="number" name="idade" id="idade" />
+          </div>
+        </div>
+        <div class="erro" id="erro-idade"></div>
+      </div>
+
+      <div class="botao-container">
+        <button type="submit" id="enviarBtn">Enviar</button>
+      </div>
+    </form>
+
+    <script src="/formulario/script.js"></script>
+  </body>
+</html>

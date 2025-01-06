@@ -1,0 +1,45 @@
+body {
+  font-family: Roboto, sans-serif;
+  height: 98vh;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tabela-container {
+  background: rgba(43, 174, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 80vw;
+  padding: 20px;
+}
+
+table {
+  background-color: white;
+}
+
+button {
+  margin-top: 24px;
+  background-color: #2bafff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: white;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+button:hover {
+  background-color: #1d8bb8;
+}
+
+button:active {
+  background-color: #1d8bb8;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

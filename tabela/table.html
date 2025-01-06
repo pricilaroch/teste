@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Teste 2 - Tabela e Filtros</title>
-</head>
-<body>
-    <h1>Tabela de Produtos:</h1>
-    
-    <!-- Filtros -->
-    <label for="categoriaFiltro">Filtrar por categoria:</label>
-    <select id="categoriaFiltro" onchange="filtrarProdutos()">
+  </head>
+  <body>
+    <div class="tabela-container">
+      <h1>Tabela de Produtos:</h1>
+
+      <!-- Filtros -->
+      <label for="categoriaFiltro">Filtrar por categoria:</label>
+      <select id="categoriaFiltro" onchange="filtrarProdutos()">
         <option value="">Todas</option>
         <option value="Equipamentos">Equipamentos</option>
         <option value="Armazenagem">Armazenagem</option>
         <option value="Veículos">Veículos</option>
         <option value="Embalagens">Embalagens</option>
         <option value="Tecnologia">Tecnologia</option>
-        <option value="Ferramentas">Ferramentas</option>
-    </select><br><br>
+        <option value="Ferramentas">Ferramentas</option></select
+      ><br /><br />
 
-    <label for="buscaFiltro">Buscar por nome do produto:</label>
-    <input type="text" id="buscaFiltro" onkeyup="filtrarProdutos()"><br><br>
+      <label for="buscaFiltro">Buscar por nome do produto:</label>
+      <input
+        type="text"
+        id="buscaFiltro"
+        onkeyup="filtrarProdutos()"
+      /><br /><br />
 
-    <!-- Tabela -->
-    <table border="1" style="width: 100%; table-layout: fixed;">
+      <!-- Tabela -->
+      <table border="1" style="width: 100%; table-layout: fixed">
         <thead>
-            <tr>
-                <th>Nome do Produto</th>
-                <th>Categoria</th>
-                <th>Preço</th>
-            </tr>
+          <tr>
+            <th>Nome do Produto</th>
+            <th>Categoria</th>
+            <th>Preço</th>
+          </tr>
         </thead>
         <tbody id="tabelaCorpo">
-            <!-- Linhas de produtos serão inseridas dinamicamente aqui -->
+          <!-- Linhas de produtos serão inseridas dinamicamente aqui -->
         </tbody>
-    </table>
+      </table>
+    </div>
+
+    <button onclick="window.location.href = '../index.html'">Voltar</button>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
