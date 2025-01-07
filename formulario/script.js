@@ -19,13 +19,17 @@ function validarInputs() {
 
   const email = document.getElementById("email");
   const erroEmail = document.getElementById("erro-email");
-
-  if (!email.value) {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+if (!email.value) {
     erro = true;
     erroEmail.textContent = "Por favor, preencha o e-mail.";
-  } else {
+} else if (!emailPattern.test(email.value)) {
+    erro = true;
+    erroEmail.textContent = "Por favor, insira um e-mail válido.";
+} else {
     erroEmail.textContent = "";
-  }
+}
 
   const idade = document.getElementById("idade");
   const erroIdade = document.getElementById("erro-idade");
